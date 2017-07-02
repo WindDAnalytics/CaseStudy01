@@ -21,7 +21,7 @@ The Sample Beer Case Study is designed and developed to understand and shed ligh
 
 Resembles the following Model:
 
-<insert img>
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/FileOrganization.png)
 
 
 * Modifications
@@ -45,7 +45,7 @@ The table(Breweries$State) command gives the values of Breweries in each State
 
 ***
 
-#### 2. Merge beer data with breweries data by Breweryid. Print first 6 observations and the last six observations to check the merged file.
+#### 2. Merge beer data with breweries data by Brewery ID. Print first 6 observations and the last six observations to check the merged file.
 
 ```{r echo=FALSE}
 library(readr)
@@ -84,6 +84,8 @@ ABV_PLOT<-ggplot(na.omit(MedABV), aes(x=reorder(State, ABV), y=ABV)) + geom_bar(
 ABV_PLOT
 ```
 Here are the Charts:
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/abvplot.png)
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/abvplot.png)
 <insert><insert>
 
 ***
@@ -119,5 +121,5 @@ ggplot(na.omit(BrewBeers), aes(x=ABV, y=IBU)) + geom_point()
 rcorr <- cor.test(BrewBeers$ABV, BrewBeers$IBU, method = "pearson")
 rcorr
 ```
-
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/scatterplotabv.ibu.png)
 This result shows a moderatly postive correlation between the two variables IBU and ABV.
