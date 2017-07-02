@@ -107,7 +107,6 @@ BrewBeers[which.max(BrewBeers$IBU), ]$IBU
 ```{r echo=FALSE}
 # Five point summary including # of NA's and the Mean.
 summary(BrewBeers$ABV)
-
 ```
 
 ***
@@ -122,4 +121,5 @@ rcorr <- cor.test(BrewBeers$ABV, BrewBeers$IBU, method = "pearson")
 rcorr
 ```
 ![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/scatterplotabv.ibu.png)
+
 This result shows a moderatly postive correlation between the two variables IBU and ABV.
