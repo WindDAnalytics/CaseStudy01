@@ -141,18 +141,18 @@ summary(BrewBeers$ABV)
 ```{r echo=FALSE}
 #Scattered Plot
 ggplot(na.omit(BrewBeers), aes(x=ABV, y=IBU)) + geom_point()
+```
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/scatterplotabv.ibu.png)
 
+```{r echo=FALSE}
 # Pearson r correlation 
 rcorr <- cor.test(BrewBeers$ABV, BrewBeers$IBU, method = "pearson")
 rcorr
 ```
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/scatterplotabv.ibu.png)
-
 This result shows a moderatly postive correlation between the two variables IBU and ABV.
 
->rcorr <- cor.test(BrewBeers$ABV, BrewBeers$IBU, method = "pearson")
->rcorr
-
+> rcorr <- cor.test(BrewBeers$ABV, BrewBeers$IBU, method = "pearson")
+> rcorr
 	Pearson's product-moment correlation
 
 data:  BrewBeers$ABV and BrewBeers$IBU
@@ -161,8 +161,7 @@ alternative hypothesis: true correlation is not equal to 0
 95 percent confidence interval:
  0.6407982 0.6984238
 sample estimates:
-      cor 
-0.6706215 
+cor 0.6706215 
 
 ***
 
