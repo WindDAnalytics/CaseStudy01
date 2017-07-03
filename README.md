@@ -7,13 +7,15 @@ output: html_document
 # Case Study : Sample Beer Study
 
 ## Author: D. Thomas, Section 405
-
+> ##### Contents
+> * Introduction
+> * File Organization
+> * Questions
+> * Conclusion
 ***
 ### Introduction:
 
 The Sample Beer Case Study is designed and developed to understand and shed light on the relationship or correlation, if any, of the two variables IBU vs. ABV, that is, International Bitterness Units of a certain Beer vs. Alcohol by Volume of the certain Beer. This Study samples from various Breweries throughout the United States. 
-
-* Below there will be answers to specific questions with sample code with explanation for every question written in R.
 
 ***
 
@@ -21,7 +23,7 @@ The Sample Beer Case Study is designed and developed to understand and shed ligh
 
 Resembles the following Model:
 
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/FileOrganization.png)
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/FileOrganization.png)
 
 
 * Modifications
@@ -84,8 +86,8 @@ ABV_PLOT<-ggplot(na.omit(MedABV), aes(x=reorder(State, ABV), y=ABV)) + geom_bar(
 ABV_PLOT
 ```
 Here are the Charts:
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/abvplot.png)
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/abvplot.png)
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/abvplot.png)
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/abvplot.png)
 <insert><insert>
 
 ***
@@ -120,6 +122,6 @@ ggplot(na.omit(BrewBeers), aes(x=ABV, y=IBU)) + geom_point()
 rcorr <- cor.test(BrewBeers$ABV, BrewBeers$IBU, method = "pearson")
 rcorr
 ```
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/scatterplotabv.ibu.png)
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/scatterplotabv.ibu.png)
 
 This result shows a moderatly postive correlation between the two variables IBU and ABV.
