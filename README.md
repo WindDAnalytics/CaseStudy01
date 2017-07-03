@@ -26,8 +26,8 @@ Resembles the following Model:
 ![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/FileOrganization.png)
 
 
-* Modifications
-* Additional Docs
+* Images contained in a subdirectory of Data called Img
+* Descrition of all known variables contained in the Data directory as a markdown file.
 
 ***
 ### Questions:
