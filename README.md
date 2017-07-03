@@ -42,7 +42,8 @@ str(Breweries)
 table(Breweries$State)  
 
 ```
-The table(Breweries$State) command gives the values of Breweries in each State
+The table(Breweries$State) command gives the values of Breweries in each State:
+
 AK AL AR AZ CA CO CT DC DE FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT NC ND NE NH NJ NM NV NY OH OK OR PA RI SC 
  7  3  2 11 39 47  8  1  2 15  7  4  5  5 18 22  3  4  5 23  7  9 32 12  9  2  9 19  1  5  3  3  4  2 16 15  6 29 25  5  4 
 SD TN TX UT VA VT WA WI WV WY 
@@ -64,7 +65,8 @@ View(BrewBeers)
 head(BrewBeers)
 tail(BrewBeers)
 ```
-> head(BrewBeers)
+Here's the head of the output of the merge data set, first 6 rows!
+
   Brew_ID        Name.x Beer_ID   ABV IBU                               Style Ounces            Name.y        City State
 1       1  Get Together    2692 0.045  50                        American IPA     16 NorthGate Brewing Minneapolis    MN
 2       1 Maggie's Leap    2691 0.049  26                  Milk / Sweet Stout     16 NorthGate Brewing Minneapolis    MN
@@ -72,8 +74,6 @@ tail(BrewBeers)
 4       1       Pumpion    2689 0.060  38                         Pumpkin Ale     16 NorthGate Brewing Minneapolis    MN
 5       1    Stronghold    2688 0.060  25                     American Porter     16 NorthGate Brewing Minneapolis    MN
 6       1   Parapet ESB    2687 0.056  47 Extra Special / Strong Bitter (ESB)     16 NorthGate Brewing Minneapolis    MN
-
-
 
 ***
 
@@ -99,9 +99,9 @@ ABV_PLOT<-ggplot(na.omit(MedABV), aes(x=reorder(State, ABV), y=ABV)) + geom_bar(
 ABV_PLOT
 ```
 Here are the Charts:
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/ibuplot.png)
+
 ![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/abvplot.png)
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/abvplot.png)
-<insert><insert>
 
 ***
 
@@ -150,8 +150,8 @@ rcorr
 
 This result shows a moderatly postive correlation between the two variables IBU and ABV.
 
-> rcorr <- cor.test(BrewBeers$ABV, BrewBeers$IBU, method = "pearson")
-> rcorr
+>rcorr <- cor.test(BrewBeers$ABV, BrewBeers$IBU, method = "pearson")
+>rcorr
 
 	Pearson's product-moment correlation
 
