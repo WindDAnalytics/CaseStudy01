@@ -168,4 +168,4 @@ sample estimates:
 
 ### Conclusion
 
-The Sample Brewery Beer Case Study is considered an Observational Study. Although there is evidence of a positive correlation between taste of bitterness and strenght of alcohol beverage, we cannot use our study to infer anything about the broader scope of the relationship between IBU and ABV. Perhaps one can go out and try it for oneself, since people do have different tastes buds and tolerance to certain levels of Alcohol, and their own opinions on the matter.  
+The Sample Brewery Beer Case Study is considered an Observational Study. Although there is evidence of a positive correlation between taste of bitterness and strength of alcohol beverage, we cannot use our study to infer anything about the broader scope of the relationship between IBU and ABV. Perhaps one can go out and try it for oneself, since people do have different tastes buds and tolerance to certain levels of Alcohol, and their own opinions on the matter.  
