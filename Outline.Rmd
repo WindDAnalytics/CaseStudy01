@@ -1,13 +1,13 @@
 ---
-title: "README"
-author: "D Thomas"
-date: "July 2, 2017"
-output: html_document
+title: "R Notebook"
+output: html_notebook
 ---
+
 # Case Study : Sample Beer Study
 
 ## Author: D. Thomas, Section 405
 
+***
 ### Introduction:
 
 The Sample Beer Case Study is designed and developed to understand and shed light on the relationship or correlation, if any, of the two variables IBU vs. ABV, that is, International Bitterness Units of a certain Beer vs. Alcohol by Volume of the certain Beer. This Study samples from various Breweries throughout the United States. 
@@ -31,7 +31,7 @@ Resembles the following Model:
 
 #### 1. How many Breweries are  present in each state?
 
-```{r echo=FALSE}
+```{r echo=TRUE}
 library(readr)
 Breweries <- read_csv("C:/Users/146st/R_Project_Repo/CaseStudy01/Data/Breweries.csv")
 View(Breweries)
@@ -44,9 +44,9 @@ The table(Breweries$State) command gives the values of Breweries in each State
 
 ***
 
-#### 2. Merge beer data with breweries data by Brewery id. Print first 6 observations and the last six observations to check the merged file.
+#### 2. Merge beer data with breweries data by Breweryid. Print first 6 observations and the last six observations to check the merged file.
 
-```{r echo=FALSE}
+```{r echo=TRUE}
 library(readr)
 Beers <- read_csv("C:/Users/146st/R_Project_Repo/CaseStudy01/Data/Beers.csv")
 View(Beers)
@@ -63,7 +63,7 @@ tail(BrewBeers)
 
 #### 3. Report the number of NA's in each column.
 
-```{r echo=FALSE}
+```{r echo=TRUE}
 summary(BrewBeers)
 ```
 We see that two columns have NA's ABV and IBU, which is 62 and 1005 respectively.
@@ -72,7 +72,7 @@ We see that two columns have NA's ABV and IBU, which is 62 and 1005 respectively
 
 #### 4. Compute the median alcohol content and international bitterness unit for each state. Plot a bar graph to compare.
 
-```{r echo=FALSE}
+```{r echo=TRUE}
 require(ggplot2)
 MedIBU<-aggregate( IBU ~ State, data=BrewBeers, FUN=median)
 IBU_PLOT<-ggplot(na.omit(MedIBU), aes(x=reorder(State, IBU), y=IBU)) + geom_bar(stat="identity") + coord_flip()
@@ -89,7 +89,7 @@ Here are the Charts:
 
 #### 5. Which state has the maximum alcoholic beer? Which stae has the most bitter beer?
 
-```{r echo=FALSE}
+```{r echo=TRUE}
 #First the Acohol by Volume State and Amount
 BrewBeers[which.max(BrewBeers$ABV), ]$State
 BrewBeers[which.max(BrewBeers$ABV), ]$ABV
@@ -101,7 +101,7 @@ BrewBeers[which.max(BrewBeers$IBU), ]$IBU
 ***
 
 #### 6. Summary statistics for ABV (Alcohol by volume) variable.
-```{r echo=FALSE}
+```{r echo=TRUE}
 # Five point summary including # of NA's and the Mean.
 summary(BrewBeers$ABV)
 
@@ -110,7 +110,7 @@ summary(BrewBeers$ABV)
 ***
 
 #### 7. Is there a relationship between the bitterness of the beer and its alcoholic content? Draw a scatter plot?
-```{r echo=FALSE}
+```{r echo=TRUE}
 #Scattered Plot
 ggplot(na.omit(BrewBeers), aes(x=ABV, y=IBU)) + geom_point()
 
