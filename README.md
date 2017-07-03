@@ -27,7 +27,7 @@ Resembles the following Model:
 
 
 * Images contained in a subdirectory of Data called Img
-* Descrition of all known variables contained in the Data directory as a markdown file.
+* Description of all known variables contained in the Data directory as a markdown file.
 
 ***
 ### Questions:
