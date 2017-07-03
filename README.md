@@ -21,7 +21,7 @@ The Sample Beer Case Study is designed and developed to understand and shed ligh
 
 Resembles the following Model:
 
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Img/FileOrganization.png)
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/FileOrganization.png)
 
 
 * Modifications
@@ -84,8 +84,8 @@ ABV_PLOT<-ggplot(na.omit(MedABV), aes(x=reorder(State, ABV), y=ABV)) + geom_bar(
 ABV_PLOT
 ```
 Here are the Charts:
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Img/abvplot.png)
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Img/abvplot.png)
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/abvplot.png)
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/abvplot.png)
 <insert><insert>
 
 ***
@@ -120,6 +120,6 @@ ggplot(na.omit(BrewBeers), aes(x=ABV, y=IBU)) + geom_point()
 rcorr <- cor.test(BrewBeers$ABV, BrewBeers$IBU, method = "pearson")
 rcorr
 ```
-![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Img/scatterplotabv.ibu.png)
+![](https://github.com/WindDAnalytics/CaseStudy01/blob/master/Analysis/Img/scatterplotabv.ibu.png)
 
 This result shows a moderatly postive correlation between the two variables IBU and ABV.
