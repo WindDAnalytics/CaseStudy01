@@ -19,7 +19,6 @@ setwd("/CaseStudy01/Analysis/Data")
 source("Analysis1.R")
 source("Analysis2.R")
 
-
 # Merge cleaned data frames into data frame object CleanedData
 # Creates .csv file and a codebook in .md
 
