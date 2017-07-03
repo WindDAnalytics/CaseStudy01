@@ -7,13 +7,15 @@ output: html_document
 # Case Study : Sample Beer Study
 
 ## Author: D. Thomas, Section 405
-
+> ##### Contents
+> * Introduction
+> * File Organization
+> * Questions
+> * Conclusion
 ***
 ### Introduction:
 
 The Sample Beer Case Study is designed and developed to understand and shed light on the relationship or correlation, if any, of the two variables IBU vs. ABV, that is, International Bitterness Units of a certain Beer vs. Alcohol by Volume of the certain Beer. This Study samples from various Breweries throughout the United States. 
-
-* Below there will be answers to specific questions with sample code with explanation for every question written in R.
 
 ***
 
