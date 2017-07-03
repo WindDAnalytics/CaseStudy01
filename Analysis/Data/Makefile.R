@@ -5,7 +5,7 @@
 ## Case Study 1
 ######################
 
-### Note - this source code file doesn’t actually do anything
+### Note - this source code pretty much does everything, it puts the pieces together
 ### It's just an example of source code file structure
 
 # Set working directory
